@@ -1,9 +1,9 @@
 import { LoadingStatementWrapper } from "../TagsField.style"
 
-const ErrorMessage = () => {
+const ErrorMessage = ({fontColor = "#000"}) => {
   
   return <LoadingStatementWrapper>
-    <p>Loading error! Sorry!</p>
+    <p style={{color: fontColor}}>Loading error! Sorry!</p>
   </LoadingStatementWrapper>
 
 }

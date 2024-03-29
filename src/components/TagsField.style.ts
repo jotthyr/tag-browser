@@ -1,7 +1,11 @@
 import styled from '@emotion/styled';
 
+type OuterTagsWrapperProps = {
+    border: string
+  }
+
 export const OuterTagsWrapper = styled('div')`
-    border: 1px solid black;
+    border: ${(props: OuterTagsWrapperProps) => props.border };
     border-radius: 16px;
     overflow: hidden;
     margin :16px 0px;

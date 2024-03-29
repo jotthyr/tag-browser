@@ -16,6 +16,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Base: Story = {
   args: {
-    
+    size: "medium",
+    border: "1px solid black",
+    chipColor: "primary"
   }
 }

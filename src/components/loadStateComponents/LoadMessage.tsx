@@ -1,11 +1,11 @@
 import { CircularProgress } from "@mui/material"
 import { LoadingStatementWrapper } from "../TagsField.style"
 
-const LoadMessage = (props?: {color: "string", fontColor: "string"}) => {
+const LoadMessage = ({color = "#4375ff", fontColor = "#000", size = 40, thickness = 3.6}) => {
   
   return <LoadingStatementWrapper>
-    <p style={{color: `${props !== undefined ? props.fontColor : "black" }`}}>Loading tags...</p>
-    <CircularProgress sx={{color: `${props !== undefined ? props.color : "blue" }`}}/>
+    <p style={{color: fontColor}}>Loading tags...</p>
+    <CircularProgress size={size} thickness={thickness} sx={{color: color}}/>
   </LoadingStatementWrapper>
 
 }

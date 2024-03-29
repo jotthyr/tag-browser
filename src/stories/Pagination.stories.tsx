@@ -16,6 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Base: Story = {
   args: {
-
+    size: "medium",
+    shape: "circular"
   }
 }

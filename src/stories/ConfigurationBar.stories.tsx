@@ -16,6 +16,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Base: Story = {
   args: {
-    
+    color: "#000",
+    inputBackground: "#FFF",
+    radioColor: "#000",
+    size: "medium"
   }
 }
